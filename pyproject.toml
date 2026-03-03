@@ -1,0 +1,20 @@
+[project]
+name = "grid-sim-110kv"
+version = "0.1.0"
+description = "Pandapower + FastAPI simulation platform for 110kV grid"
+requires-python = ">=3.10"
+dependencies = [
+  "fastapi>=0.111.0",
+  "uvicorn>=0.30.0",
+  "pandapower>=2.14.0",
+  "pydantic>=2.7.0",
+  "numpy>=1.26.0"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.2.0"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
